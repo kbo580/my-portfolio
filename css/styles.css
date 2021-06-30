@@ -308,6 +308,7 @@ section:last-child {
 /* ヘッダー */
 /* -------------------------------------------- */
 header {
+  width: 100%;
   padding: 16px 0;
   background-color: #263858;
   border-bottom: 2px solid #fff;
@@ -421,6 +422,7 @@ footer .copy {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: auto;
 }
 
 .top-works .gallery {
@@ -526,13 +528,6 @@ footer .copy {
   display: block;
   width: 100%;
   padding-top: 62.5%;
-  -webkit-transition: all .6s;
-  transition: all .6s;
-}
-
-.works .works-container .works-wrapper .works-img-wrapper .works-image:hover {
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
 }
 
 .works .works-container .works-wrapper .works-title a {
@@ -567,6 +562,29 @@ footer .copy {
   }
   .works .works-container .works-wrapper:nth-last-child(2) {
     margin-bottom: 0;
+  }
+  .works .works-container .works-wrapper .works-img-wrapper {
+    width: 100%;
+    margin-bottom: 8px;
+    overflow: hidden;
+  }
+  .works .works-container .works-wrapper .works-img-wrapper .works-image {
+    display: block;
+    width: 100%;
+    padding-top: 62.5%;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+  }
+  .works .works-container .works-wrapper .works-img-wrapper .works-image:hover {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+  .works .works-container .works-wrapper .works-title a {
+    -webkit-transition: all .4s;
+    transition: all .4s;
+  }
+  .works .works-container .works-wrapper .works-title a:hover {
+    opacity: .7;
   }
 }
 

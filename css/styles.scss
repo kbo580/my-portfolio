@@ -235,11 +235,8 @@ section{
     opacity: 0;
     z-index: -1;
   }
-
-
-
-
 }
+
 /* -------------------------------------------- */
 /* サイドナビ */
 /* -------------------------------------------- */
@@ -331,6 +328,7 @@ section{
 /* ヘッダー */
 /* -------------------------------------------- */
 header{
+  width: 100%;
   padding: 16px 0;
   background-color: $subColor;
   border-bottom: 2px solid #fff;
@@ -449,6 +447,7 @@ footer{
   img{
     width: 100%;
     object-fit: cover;
+    height: auto;
   }
   
   .gallery{
@@ -565,11 +564,6 @@ footer{
           display: block;
           width: 100%;
           padding-top: 62.5%;
-          transition: all .6s;
-
-          &:hover{
-            transform: scale(1.1, 1.1);
-          }
         }
       }
 
@@ -586,12 +580,13 @@ footer{
 }  
 
 @media (min-width: 575px) {
+
   .works{
     p{
       margin-bottom: 48px;
       text-align: center;
     }
-
+  
     .works-container{
       width: 100%;
       display: flex;
@@ -602,13 +597,39 @@ footer{
         text-align: center;
         width: 48%;
         margin-bottom: 24px;
-
+  
         &:nth-last-child(2){
           margin-bottom: 0;
         }
+  
+        .works-img-wrapper{
+          width: 100%;
+          margin-bottom: 8px;
+          overflow: hidden;
+  
+          .works-image{
+            display: block;
+            width: 100%;
+            padding-top: 62.5%;
+            transition: all .6s;
+  
+            &:hover{
+              transform: scale(1.1, 1.1);
+            }
+          }
+        }
+  
+        .works-title{
+          a{
+            transition: all .4s;
+            &:hover{
+              opacity: .7;
+            }
+          }
+        }
       }
     }
-  }
+  }  
 }
 
 /* -------------------------------------------- */
