@@ -339,14 +339,15 @@ header{
 
   .home{
     margin-bottom: 16px;
+
     &.current{
       color: $accentColor;
     }
   }
 
     .header-nav{
-
       ul{
+        width: 100%;
         display: flex;
         justify-content: space-between;
 
@@ -421,6 +422,7 @@ header{
 /* フッター */
 /* -------------------------------------------- */
 footer{
+  width: 100%;
   text-align: center;
   background-color: $subColor;
   border-top: 2px solid $textColor;
@@ -430,6 +432,7 @@ footer{
     font-size: rem(12);
   }
 }
+
 @media (min-width: 575px) {
   footer{
     padding: 32px;
@@ -602,14 +605,8 @@ footer{
         }
   
         .works-img-wrapper{
-          width: 100%;
-          margin-bottom: 8px;
-          overflow: hidden;
   
           .works-image{
-            display: block;
-            width: 100%;
-            padding-top: 62.5%;
             transition: all .6s;
   
             &:hover{
@@ -854,11 +851,8 @@ margin-bottom: 10px;
     border: 2px solid #ddd;
     margin-bottom: 24px;
     width: 100%;
-    overflow: scroll;
-    height: 200px;
     
     .single-image{
-      height: 100vh;
       width: 100%;
       padding-top: 62.5%;
       object-fit: cover;
@@ -891,7 +885,7 @@ margin-bottom: 10px;
 @media (min-width: 575px) {
   .single{
     .mv{
-      height: 350px;
+      // height: 350px;
       margin-bottom: 32px;
     }
     ul{
@@ -904,7 +898,7 @@ margin-bottom: 10px;
 
   .single{
     .mv{
-      height: 600px;
+      // height: 600px;
       margin-bottom: 32px;
     }
     ul{

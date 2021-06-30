@@ -329,6 +329,7 @@ header .header-nav-wrapper .home.current {
 }
 
 header .header-nav-wrapper .header-nav ul {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,6 +399,7 @@ header .header-nav-wrapper .header-nav ul li.current a {
 /* フッター */
 /* -------------------------------------------- */
 footer {
+  width: 100%;
   text-align: center;
   background-color: #263858;
   border-top: 2px solid #fff;
@@ -560,15 +562,7 @@ footer .copy {
   .works .works-container .works-wrapper:nth-last-child(2) {
     margin-bottom: 0;
   }
-  .works .works-container .works-wrapper .works-img-wrapper {
-    width: 100%;
-    margin-bottom: 8px;
-    overflow: hidden;
-  }
   .works .works-container .works-wrapper .works-img-wrapper .works-image {
-    display: block;
-    width: 100%;
-    padding-top: 62.5%;
     -webkit-transition: all .6s;
     transition: all .6s;
   }
@@ -790,12 +784,9 @@ span.wpcf7-not-valid-tip,
   border: 2px solid #ddd;
   margin-bottom: 24px;
   width: 100%;
-  overflow: scroll;
-  height: 200px;
 }
 
 .single .mv .single-image {
-  height: 100vh;
   width: 100%;
   padding-top: 62.5%;
   -o-object-fit: cover;
@@ -831,7 +822,6 @@ span.wpcf7-not-valid-tip,
 
 @media (min-width: 575px) {
   .single .mv {
-    height: 350px;
     margin-bottom: 32px;
   }
   .single ul {
@@ -841,7 +831,6 @@ span.wpcf7-not-valid-tip,
 
 @media (min-width: 1025px) {
   .single .mv {
-    height: 600px;
     margin-bottom: 32px;
   }
   .single ul {
