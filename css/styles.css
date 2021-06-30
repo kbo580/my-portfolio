@@ -422,15 +422,10 @@ footer .copy {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: auto;
 }
 
 .top-works .gallery {
   margin: 0 0 16px 0;
-}
-
-.top-works .gallery li img {
-  height: 50vw;
 }
 
 .top-works .slick-prev,
